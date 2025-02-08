@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTL Semantîco</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin:0%;
+            background-color: rgb(180,180,180);
+        }
+        
+        .topo{
+            background-color:beige;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #777;
+            overflow:hidden;
+            text-align: center;
+            justify-items: center;
+        }
+        .menu a {
+            color: antiquewhite;
+            padding: 14px 16px;
+            float:left;
+            text-decoration: none;
+        }
+        .coluna-50 {
+            background-color:beige;
+            float:left;
+            width: 50%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Semântico</h1>
+    <div>
+        <!--PRIMEIRA DIV-->
+        <header class="topo">
+            <h2>TOPO</h2>
+            <p>Parte de Cima</p>
+        </header>
+        <!--SEGUNDA DIV-->
+        <div class="menu">
+            <h2>MENU</h2>
+            <nav>
+                <a href="index.html">Site Original</a>
+                <a href="index.html">Site Original</a>
+                <a href="index.html">Site Original</a>
+                <a href="index.html">Site Original</a>
+            </nav>
+        </div>
+        <div>
+            <!--TERCEIRA DIV-->
+            <section class="coluna-50">
+                <article>
+                    <h2>Coluna</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quis totam dolorum quia architecto adipisci aliquid laboriosam quo temporibus iste, placeat dicta repellat sed ea rem maxime quae debitis voluptas?</p>
+                </article>
+            </section>
+            <!--QUARTA DIV-->
+            <section class="coluna-50">
+                <article>
+                    <h2>Coluna</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quis totam dolorum quia architecto adipisci aliquid laboriosam quo temporibus iste, placeat dicta repellat sed ea rem maxime quae debitis voluptas?</p>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapeamento de Imagem</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            background-color: rgb(180, 180, 180);
+            margin: 0%;
+        }
+        header, .secao{
+            justify-self: center;
+            width: 50%;
+        }
+        .conteudo{
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteudo">
+        <header>
+            <h1>TÍTULO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea modi velit error porro provident sed, expedita perspiciatis! Necessitatibus id voluptatibus ullam eius adipisci hic fugiat asperiores libero commodi ipsam!</p>
+        </header>
+        <section class="secao">
+            <article>     
+                <p>Accusantium rem vel possimus facilis incidunt. Sit et sapiente iusto, ipsa quisquam consequuntur necessitatibus beatae totam dignissimos temporibus modi explicabo voluptates ratione quis hic! Quasi aperiam illum voluptatum eum nostrum!</p>
+            </article>
+        </section>
+        <section class="secao">
+            <article>
+            <p>Excepturi perspiciatis soluta libero animi, facilis laboriosam voluptatem velit labore eaque eligendi delectus, repellat placeat. Natus, aperiam architecto fugit perspiciatis eaque aliquam obcaecati qui amet sunt, magni doloribus debitis tenetur?</p>
+            <br> 
+            </article>
+        </section>
+    </div>
+
+    <div>
+        <h2>Clique nos objetos</h2>
+        <br><br>
+        <img src="computador.jpg" usemap="#image-map" width="300">
+        <map name="image-map">
+            <area target="_parent" alt="Caneta" title="Caneta" href="index.html" coords="243,76,245,73,180,22,177,23,173,20,172,22,176,26,177,26" shape="poly">
+            <area target="_parent" alt="Celular" title="Celular" href="audio.html" coords="180,109,212,88,213,78,157,30,127,46,127,57" shape="poly">
+            <area target="_parent" alt="Notebook" title="Computador" href="video.html" coords="131,212,171,181,175,169,82,53,79,51,58,0,0,1,1,212" shape="poly">
+        </map>
+    </div>
+</body>
+</html>

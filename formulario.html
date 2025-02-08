@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(180, 180, 180);
+            margin: 0%;
+        }
+        h1, h2, textarea, .select, .textarea, .submit{
+            text-align: center;
+        }
+        form, .radio, .checkbox{
+            display: grid;
+        }
+        .nome, .sobrenome, .email, .senha, .select, textarea,.radio label, .radio section,.checkbox label, .checkbox section, .submit{
+            justify-self: center;
+            width: 50%;
+        }
+        input{
+            width: 100%;
+        }
+        .radio input, .checkbox input {
+            width: 13px;
+        }
+        .radio section, .checkbox section{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>FORMULÁRIO</h1><br>
+        <h2><b>*Não coloque informações reais</b></h2>
+        <h2><b>*complete isso pra acessar o Secrets</b></h2>
+        <form action="secrets.html">
+            <!--NOME-->
+            <div class="nome">
+                <label for="campo-nome">Nome: </label>
+                <input class="todo" id="campo-nome" type="text" placeholder="Digite o Nome" required>
+            </div><br>
+            <!--SOBRENOME-->
+            <div class="sobrenome">
+                <label for="campo-sobrenome">Sobrenome: </label>
+                <input class="todo" id="campo-sobrenome" type="text" placeholder="Digite o Sobrenome" required>
+            </div><br>
+            <!--EMAIL-->
+            <div class="email">
+                <label for="campo-email">Email:</label>
+                <input class="todo" id="campo-email" type="email" placeholder="Digite o Email" required>
+            </div><br>
+            <!--SENHA-->
+            <div class="senha">
+                <label for="campo-senha">Senha:</label>
+                <input class="todo" id="campo-senha" type="password" placeholder="Digite a Senha" required>
+            </div><br>
+            <!--RADIO-->
+            <div class="radio">
+                <h2>País:</h2>
+                <section>
+                    <input type="radio" name="país" value="Angola" id="Angola">
+                    <label for="Angola">Angola</label><br><br>
+                </section>
+
+                <section>
+                    <input type="radio" name="país" value="Brasil" id="Brasil">
+                    <label for="Brasil">Brasil</label><br><br>
+                </section>
+
+                <section>
+                    <input type="radio" name="país" value="Canadá" id="Canadá">
+                    <label for="Canadá">Canadá</label><br><br>
+                </section>
+
+                <section>
+                    <input type="radio" name="país" value="Dinamarca" id="Dinamarca">
+                    <label for="Dinamarca">Dinamarca</label><br><br>
+                </section>
+
+                <section>
+                    <input type="radio" name="país" value="Estados Unidos" id="Estados Unidos">
+                    <label for="Estados Unidos">Estados Unidos</label><br><br>
+                </section>
+            </div><br><br>
+            <!--CHECKBOX-->
+            <div class="checkbox">
+                <h2>Fruta:</h2>
+                <section>
+                    <input type="checkbox" name="país" value="Banana" id="Banana">
+                    <label for="Banana">Banana</label><br><br>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="país" value="Damasco" id="Damasco">
+                    <label for="Damasco">Damasco</label><br><br>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="país" value="Framboesa" id="Framboesa">
+                    <label for="Framboesa">Framboesa</label><br><br>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="país" value="Jabuticaba" id="Jabuticaba">
+                    <label for="Jabuticaba">Jabuticaba</label><br><br>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="país" value="Nenhuma" id="Nenhuma">
+                    <label for="Nenhuma">Nenhuma</label><br><br>
+                </section>
+            </div><br><br>
+            <!--SELECT-->
+            <div class="select">
+                <h2>Unidade Federal:</h2>
+                <select name="Estados" required>
+                    <option selected disabled value="Selecionar Estado">Selecionar Estado</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso Do Sul">Mato Grosso Do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Paraíba</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+            </div><br><br>
+            <!--TEXT-AREA-->
+            <div class="textarea">
+                <textarea name="Mensagem" rows="15" cols="30" placeholder="Digite Algo" required></textarea>
+            </div><br><br>
+            <!--SUBMIT-->
+            <div class="submit">
+                <input class="todo" type="submit" value="Entrar">
+                <br><br>
+                <a class="original" href="index.html">Site Original</a>
+            </div><br>
+            <!--BUTTON-->
+        </form>
+    </div>
+</body>
+</html>
